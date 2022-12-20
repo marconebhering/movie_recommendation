@@ -3,6 +3,7 @@ import streamlit as st
 import pickle
 import requests
 
+st.set_page_config(page_title = "Sistema de Recomendação de Filmes")
 
 def fetch_poster(movie_id):
     response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=020b311fe0559698373a16008dc6a672&language=en-US'.format(movie_id))
